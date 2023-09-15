@@ -12,6 +12,7 @@
     --border-gradient: linear-gradient(227.58deg, #F4492F -44.04%, #F367A5 42.36%, #553DEB 113.95%);
 
     --font-96: clamp(56px, 8vw, 96px);
+    --font-72: clamp(56px, 8vw, 72px);
     --font-40: clamp(24px, 6vw, 40px);
     --font-32: clamp(24px, 4vw, 32px);
 }
@@ -31,8 +32,8 @@ body {
 h1 {
     font-style: normal;
     font-weight: 400;
-    font-size: var(--font-96);
-    line-height: 116px;
+    font-size: var(--font-72);
+    line-height: 92px;
 }
 
 h2 {
@@ -170,7 +171,13 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.header,
+.header {
+    min-height: 500px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .section {
     min-height: 850px;
     padding: 110px;
@@ -179,8 +186,8 @@ p {
     min-height: 500px;
     padding-left: 110px;
     padding-right: 110px;
-    padding-top: 110px;
-    padding-bottom: 1px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* HEADER */
@@ -230,13 +237,13 @@ p {
 }
 
 .about h2 {
-    max-width: 900px;
+    max-width: 1000px;
     font-family: 'Inter';
     font-weight: 400;
     font-size: var(--font-40);
     line-height: 150%;
 
-    margin-bottom: 180px;
+    margin-bottom: 10px;
 }
 
 .about .achievements {
@@ -441,6 +448,7 @@ p {
 .skills .skill-list {
     list-style: none;
     flex-wrap: wrap;
+    padding-bottom: 60px;
 }
 
 .skills .skill-list li {
